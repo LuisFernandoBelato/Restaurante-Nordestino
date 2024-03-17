@@ -1,0 +1,13 @@
+#bloco{position:fixed; width:300px; height:800px;left:1px; background-color: #2F3136;}
+#blocoh{position:fixed; right:1px; width:200px; height: 800px; background-color: #2F3136;}
+*{color:white;font-family: serif;font-size: 10px;}
+.titulo{
+    color: white; text-transform: uppercase; text-align: center; font-size: 30px;
+}
+tel{color:white;font-family: serif;font-size: 15px;
+text-align: center; margin-left: 10px;}
+.subtitulo{color: white; text-transform: uppercase; margin-left:400px; font-size: 20px;}
+.texto{margin-left: 350px; font-size:15px; margin-right: 235px;}
+.titulobordadireita{color: white; text-transform: uppercase; text-align: center; font-size: 20px;   
+}
+.habilidade{color: white; text-transform: uppercase; font-size: 15px;text-align:justify; margin-left: 15px;}

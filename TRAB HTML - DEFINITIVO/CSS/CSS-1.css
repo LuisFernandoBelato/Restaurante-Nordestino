@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.wrapper img{
+    width: 120px;
+    height: 120px;
+}
+
+#abs{background-color: aqua;
+width:300px;height:150px;
+top:150px;left:150px;
+position:absolute;}
+
+#rel{background-color:blue;
+width:200px;height:300px;
+top : 300px;left:100px;
+position:relative}
+
+#fix{background-color: green;
+width: 200px;height:150px;
+top: 100px;left: 400px;
+position:fixed;}
+#abs:hover{z-index:1;}
+    
+#azul{width: 50%;height:100px;
+        background-color: blue;float:left;}
+        
+#vermelho{width: 30%;height:100px;
+        background-color: red;float:left;}
+        
+#laranja{width: 50%;height:100px;
+        background-color:orange;float:left;}
+        
+#verde{width: 30%;height:100px;
+        background-color:green;float:left;}
+        
+#topo{
+    width:100%; background-image: url("../img/bg-header.jpg");
+    background-position: center -32px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    background-color: #ceb163;
+}
+                
+
+#principal{width:100%;margin:0 auto;}
+.alinhar{text-align: center;}
+.listacactu{list-style-image:url("../img/CACTUS ICON.png");}
+        
+        
+.menu section{border:3px dashed orange;
+    background-color: gray;
+    color:white;
+    display:inline;
+    }
+.centro{text-align:center;}
+
+a:link{text-decoration:none;}
+
+a:visited{text-decoration:none;}
+section:hover{
+    text-decoration:none;
+    font-weight: bold;
+    }
+
+a:active{text-decoration:none;}
+
+
+
+
+#menu2 ul{
+    margin-top: 20px;
+    text-align: center;
+    list-style: none;
+}
+#menu2 ul li{
+    display: inline;
+    
+}
+#menu2 ul li a{
+    padding: 12px 10px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+#menu2 ul li a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    transition: 0.6s;
+    background-color:#72a741;
+}
+
+#menu2 ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    transition: 0.6s;
+    background-color:#72a741;
+}
+#menu2 ul li a:hover::before, #menu2 ul li a:hover::after {
+    height: 100%;
+    transition: 0.6s;
+}
+#cardapio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+#senha  a button:houver{
+    background-color:orange;
+    color: white;
+}
+#item{
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    background-color: rgba(0,0,0, 0.85);
+    margin:10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#cardapio img{
+    text-align: center;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+}
+#item p{
+    font-size:14px;
+    
+}
+#item button{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size:14px;
+    font-weight: bold;
+    cursor:pointer;
+    border:none;
+}
+#item button:hover{
+    background-color: orange;
+}
+
+.sub-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(97 132 63);
+    padding: 30px;
+}
+.sub-menu img{
+    height: 70px;
+    width: auto;
+}
+.sub-menu ul{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+.sub-menu ul li{
+    list-style: none;
+}
+
+.sub-menu ul li a{
+    outline: none;
+    text-decoration: none;
+    color: #000;
+    background: #ceb163;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0 15px;
+}
+#sobre{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    background-color: rgba(0,0,0, 0.85);
+    padding-top: 60px;
+}
+
+#sobre img{
+    width: 50%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+}
+#sobre h1{
+    font-weight: 700;
+    padding-bottom: 60px;
+
+}
+#sobre .bg-size{
+    width: 50%;
+    background-image: url("../img/LOGO.png");
+    background-size: 405px;
+    background-repeat: no-repeat;
+    background-color: #f8f189;
+    background-position: center;
+    height: 400px;
+}
+#sobre p{
+    font-size: 21px;
+    font-family: sans-serif;
+    text-align: justify;
+    padding: 40px;
+    line-height: 33px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#body-sobre{
+    display: flex;
+    flex-direction: row;
+}
+footer{
+    padding: 50px 0;
+    background-color: #0f1f00;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col ul li{
+    margin: 10px 0;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+}
+.footer-col .medias-socias{
+    margin-top: 30px;
+}
+.footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+.footer-col .medias-socias a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-socias a:hover{
+    color: orange;
+    background-color: red;
+}
+ input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 4px;
+}
+ input::placeholder{
+    color: white;
+}
+.footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #415aca;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+}
+footer .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+footer .row .logo-footer{
+    object-fit: cover;
+    object-position: bottom;
+    width: 187px;
+    height: 121px;
+}
+
+.form-user, .cardapio-bg{
+    background-color: rgba(0,0,0, 0.85);
+    padding: 60px;
+}
+.form-user #senha{
+    max-width: 600px;
+    margin: auto;
+}
+
+.form-user #senha label{
+    color: #fff;
+}
+.form-user #senha input{
+    margin: 16px 0 36px
+}
+.form-user #senha button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.cardapio-bg .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.cardapio-bg .row h1{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 36px;
+}
+.cardapio-bg .row .cards{
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    padding: 30px;
+    min-height: 280px;
+    transition: 0.3s;
+    border: 6px solid #fff;
+    margin-bottom: 60px;
+}
+.cardapio-bg .row .cards:hover{
+    transition: 0.3s;
+    border-color: #ceb163;
+
+}
+.cardapio-bg .row .cards h2{
+    color: #000;
+    margin-bottom: 16px;
+    font-size: 23px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cardapio-bg .row .cards p{
+    color: #000;
+    font-size: 17px;
+    line-height: 23px;
+}
